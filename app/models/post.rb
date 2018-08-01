@@ -9,6 +9,7 @@ class Post < ActiveRecord::Base
 
 
   def validate(clickbait)
-    unless clickbait == 
+    unless clickbait.includes? "Won't Believe" || "Secret" || "Top [number]" || "Guess"
+      
   end
 end
