@@ -1,4 +1,5 @@
 class Author < ActiveRecord::Base
   validates :name,
-  validates :
+  validates :phone_number, length {}
+
 end
