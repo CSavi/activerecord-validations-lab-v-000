@@ -9,7 +9,7 @@ class Post < ActiveRecord::Base
 
 
   def clickbait?
-    unless title.include?("Won't Believe" || "Secret" || "Top [number]" || "Guess")
+    unless title.to_s.include?("Won't Believe" || "Secret" || "Top [number]" || "Guess")
       errors.add(:title, "Not sufficient clickbait")
     end
   end
